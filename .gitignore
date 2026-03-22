@@ -1,0 +1,9 @@
+build/
+libs/
+stubs/
+*.apk
+*.keystore
+*.class
+*.dex
+*.zip
+/opt/

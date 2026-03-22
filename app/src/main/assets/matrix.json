@@ -1,0 +1,50 @@
+{
+  "com.zhiliaoapp.musically": {
+    "label": "TikTok",
+    "sim_operator": "310260",
+    "sim_operator_name": "T-Mobile",
+    "sim_country": "us",
+    "network_operator": "310260",
+    "network_operator_name": "T-Mobile",
+    "network_country": "us",
+    "locale_language": "en",
+    "locale_country": "US",
+    "timezone": "America/New_York"
+  },
+  "com.ss.android.ugc.aweme": {
+    "label": "Douyin-as-TikTok",
+    "sim_operator": "310260",
+    "sim_operator_name": "T-Mobile",
+    "sim_country": "us",
+    "network_operator": "310260",
+    "network_operator_name": "T-Mobile",
+    "network_country": "us",
+    "locale_language": "en",
+    "locale_country": "US",
+    "timezone": "America/New_York"
+  },
+  "com.anthropic.claude": {
+    "label": "Claude",
+    "sim_operator": "310260",
+    "sim_operator_name": "T-Mobile",
+    "sim_country": "us",
+    "network_operator": "310260",
+    "network_operator_name": "T-Mobile",
+    "network_country": "us",
+    "locale_language": "en",
+    "locale_country": "US",
+    "timezone": "America/Los_Angeles"
+  },
+  "com.jingdong.app.mall": {
+    "label": "JD",
+    "sim_operator": "46000",
+    "sim_operator_name": "CMCC",
+    "sim_country": "cn",
+    "network_operator": "46000",
+    "network_operator_name": "中国移动",
+    "network_country": "cn",
+    "locale_language": "zh",
+    "locale_country": "CN",
+    "timezone": "Asia/Shanghai"
+  }
+}
