@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      .rain { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: #0a3a0a; font-size: 13px; }
+      .title { font-family: 'JetBrains Mono', 'Courier New', monospace; font-weight: 700; fill: #00ff41; font-size: 42px; }
+      .subtitle { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: #00cc33; font-size: 14px; }
+      .app-name { font-family: 'JetBrains Mono', 'Courier New', monospace; font-weight: 700; fill: #00ff41; font-size: 15px; }
+      .app-env { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: #008f20; font-size: 12px; }
+      .arrow { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: #005a10; font-size: 14px; }
+      .dim { fill: #004a0e; }
+      .bright { fill: #00ff41; }
+      .mid { fill: #00aa30; }
+    </style>
+  </defs>
+
+  <rect width="900" height="320" fill="#0d0d0d" rx="8"/>
+
+  <!-- Matrix rain columns - background texture -->
+  <text class="rain" x="15" y="20">ア</text><text class="rain" x="15" y="38">9</text><text class="rain" x="15" y="56">カ</text><text class="rain" x="15" y="74">0</text><text class="rain" x="15" y="92">ム</text><text class="rain" x="15" y="110">7</text><text class="rain" x="15" y="128">セ</text><text class="rain" x="15" y="146">2</text><text class="rain" x="15" y="164">ヨ</text><text class="rain" x="15" y="182">5</text><text class="rain" x="15" y="200">ナ</text><text class="rain" x="15" y="218">1</text><text class="rain" x="15" y="236">ハ</text><text class="rain" x="15" y="254">8</text><text class="rain" x="15" y="272">ツ</text><text class="rain" x="15" y="290">3</text><text class="rain" x="15" y="308">レ</text>
+
+  <text class="rain" x="40" y="12">3</text><text class="rain" x="40" y="30">ケ</text><text class="rain" x="40" y="48">7</text><text class="rain" x="40" y="66">ウ</text><text class="rain" x="40" y="84">1</text><text class="rain" x="40" y="102">テ</text><text class="rain" x="40" y="120">6</text><text class="rain" x="40" y="138">ニ</text><text class="rain" x="40" y="156">0</text><text class="rain" x="40" y="174">マ</text><text class="rain" x="40" y="192">4</text><text class="rain" x="40" y="210">ヒ</text><text class="rain" x="40" y="228">9</text><text class="rain" x="40" y="246">ソ</text><text class="rain" x="40" y="264">2</text><text class="rain" x="40" y="282">ラ</text><text class="rain" x="40" y="300">5</text>
+
+  <text class="rain" x="65" y="25">ヌ</text><text class="rain" x="65" y="43">4</text><text class="rain" x="65" y="61">コ</text><text class="rain" x="65" y="79">8</text><text class="rain" x="65" y="97">エ</text><text class="rain" x="65" y="115">1</text><text class="rain" x="65" y="133">リ</text><text class="rain" x="65" y="151">6</text><text class="rain" x="65" y="169">タ</text><text class="rain" x="65" y="187">0</text><text class="rain" x="65" y="205">ワ</text><text class="rain" x="65" y="223">3</text><text class="rain" x="65" y="241">ミ</text><text class="rain" x="65" y="259">7</text><text class="rain" x="65" y="277">フ</text><text class="rain" x="65" y="295">2</text>
+
+  <text class="rain" x="830" y="18">5</text><text class="rain" x="830" y="36">ロ</text><text class="rain" x="830" y="54">1</text><text class="rain" x="830" y="72">チ</text><text class="rain" x="830" y="90">9</text><text class="rain" x="830" y="108">メ</text><text class="rain" x="830" y="126">3</text><text class="rain" x="830" y="144">ス</text><text class="rain" x="830" y="162">7</text><text class="rain" x="830" y="180">ク</text><text class="rain" x="830" y="198">0</text><text class="rain" x="830" y="216">ネ</text><text class="rain" x="830" y="234">4</text><text class="rain" x="830" y="252">イ</text><text class="rain" x="830" y="270">8</text><text class="rain" x="830" y="288">ホ</text><text class="rain" x="830" y="306">2</text>
+
+  <text class="rain" x="855" y="8">オ</text><text class="rain" x="855" y="26">6</text><text class="rain" x="855" y="44">サ</text><text class="rain" x="855" y="62">2</text><text class="rain" x="855" y="80">モ</text><text class="rain" x="855" y="98">8</text><text class="rain" x="855" y="116">キ</text><text class="rain" x="855" y="134">4</text><text class="rain" x="855" y="152">ト</text><text class="rain" x="855" y="170">0</text><text class="rain" x="855" y="188">ヤ</text><text class="rain" x="855" y="206">5</text><text class="rain" x="855" y="224">シ</text><text class="rain" x="855" y="242">1</text><text class="rain" x="855" y="260">ル</text><text class="rain" x="855" y="278">7</text><text class="rain" x="855" y="296">ノ</text>
+
+  <text class="rain" x="880" y="30">2</text><text class="rain" x="880" y="48">ヘ</text><text class="rain" x="880" y="66">9</text><text class="rain" x="880" y="84">ア</text><text class="rain" x="880" y="102">3</text><text class="rain" x="880" y="120">テ</text><text class="rain" x="880" y="138">7</text><text class="rain" x="880" y="156">カ</text><text class="rain" x="880" y="174">1</text><text class="rain" x="880" y="192">ユ</text><text class="rain" x="880" y="210">6</text><text class="rain" x="880" y="228">ム</text><text class="rain" x="880" y="246">0</text><text class="rain" x="880" y="264">セ</text><text class="rain" x="880" y="282">4</text><text class="rain" x="880" y="300">ナ</text>
+
+  <!-- Title -->
+  <text class="title" x="450" y="75" text-anchor="middle">AppsMatrix</text>
+  <text class="subtitle" x="450" y="100" text-anchor="middle">You are the Architect. Each app lives in its own Matrix.</text>
+
+  <!-- Divider -->
+  <line x1="150" y1="120" x2="750" y2="120" stroke="#004a0e" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- App Matrix entries -->
+  <!-- TikTok -->
+  <rect x="120" y="140" width="660" height="36" rx="4" fill="#0a1a0a" stroke="#003a0a" stroke-width="1"/>
+  <text class="app-name" x="140" y="163">TikTok</text>
+  <text class="arrow" x="280" y="163">──────→</text>
+  <text class="app-env" x="400" y="158">T-Mobile  310260  en_US</text>
+  <text class="app-env" x="400" y="172">America/New_York</text>
+  <rect x="640" y="148" width="120" height="22" rx="3" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
+  <text class="app-env bright" x="665" y="163" opacity="0.6">MATRIX ✓</text>
+
+  <!-- Claude -->
+  <rect x="120" y="184" width="660" height="36" rx="4" fill="#0a1a0a" stroke="#003a0a" stroke-width="1"/>
+  <text class="app-name" x="140" y="207">Claude</text>
+  <text class="arrow" x="280" y="207">──────→</text>
+  <text class="app-env" x="400" y="202">T-Mobile  310260  en_US</text>
+  <text class="app-env" x="400" y="216">America/Los_Angeles</text>
+  <rect x="640" y="192" width="120" height="22" rx="3" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
+  <text class="app-env bright" x="665" y="207" opacity="0.6">MATRIX ✓</text>
+
+  <!-- JD -->
+  <rect x="120" y="228" width="660" height="36" rx="4" fill="#0a1a0a" stroke="#003a0a" stroke-width="1"/>
+  <text class="app-name" x="140" y="251">JD 京东</text>
+  <text class="arrow" x="280" y="251">──────→</text>
+  <text class="app-env" x="400" y="246">CMCC  46000  zh_CN</text>
+  <text class="app-env" x="400" y="260">Asia/Shanghai</text>
+  <rect x="640" y="236" width="120" height="22" rx="3" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
+  <text class="app-env bright" x="665" y="251" opacity="0.6">MATRIX ✓</text>
+
+  <!-- Others -->
+  <rect x="120" y="272" width="660" height="36" rx="4" fill="#0a1a0a" stroke="#003a0a" stroke-width="1" opacity="0.5"/>
+  <text class="app-name dim" x="140" y="295">*</text>
+  <text class="arrow" x="280" y="295" opacity="0.5">──────→</text>
+  <text class="app-env dim" x="400" y="295">real world — untouched</text>
+
+</svg>

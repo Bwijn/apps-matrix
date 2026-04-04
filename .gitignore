@@ -1,9 +1,8 @@
 build/
 libs/
-stubs/
 *.apk
 *.keystore
 *.class
 *.dex
-*.zip
-/opt/
+CLAUDE.MD
+ui-preview.html
