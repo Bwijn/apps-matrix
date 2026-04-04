@@ -9,28 +9,28 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/Bwijn/apps-matrix?style=flat-square" alt="License"/></a>
 </p>
 
-<p align="center"><b><a href="README.zh.md">中文</a> | English</b></p>
+<p align="center"><b>中文 | <a href="README.en.md">English</a></b></p>
 
-An LSPosed module that constructs a **separate simulated environment** for each app — carrier, locale, timezone. TikTok sees T-Mobile in New York, Claude sees Los Angeles, JD sees China Mobile in Shanghai. Each app lives in its own Matrix. None of them can tell.
+一个 LSPosed 模块，给每个 App **单独造一套环境** —— 运营商、语言、时区，各管各的。TikTok 以为你在纽约连着 T-Mobile，京东该看中国移动还是中国移动。每个 App 活在自己的 Matrix 里，谁也不知道隔壁是什么。
 
-## Why
+## 为什么要用
 
-Global spoofing (`resetprop`) changes the environment for **all** apps at once. Chinese apps like JD/Taobao see foreign carrier info and trigger risk control. Foreign apps see Chinese locale and refuse to work. You can't have both.
+`resetprop` 一把梭全局改运营商，京东淘宝一看你是 T-Mobile + en_US，风控直接拉闸 —— 弹验证、踢登录、封号预警。不改吧，TikTok Claude ChatGPT 又用不了。两头堵。
 
-AppsMatrix hooks APIs **per-process** — each app sees only the identity you assign to it. Everything else stays real.
+AppsMatrix **按进程 Hook**，每个 App 只看到你喂给它的身份，其他 App 该怎样还怎样。干净，不串味。
 
-## Install
+## 装模块
 
-1. Download APK from [**Releases**](../../releases/latest)
-2. Install: `adb install -r apps-matrix.apk`
-3. **LSPosed Manager** → enable **AppsMatrix** → check target apps
-4. Reboot
+1. 去 [**Releases**](../../releases/latest) 下 APK
+2. 装上：`adb install -r apps-matrix.apk`
+3. **LSPosed 管理器** → 启用 **AppsMatrix** → 勾上要伪装的 App
+4. 重启
 
-Done. Each target app now lives in its Matrix.
+完事。打开 App 就已经活在 Matrix 里了。
 
-## Config
+## 配置
 
-Edit `app/src/main/assets/matrix.json` — one entry per app:
+改 `app/src/main/assets/matrix.json`，一个包名一套人设：
 
 ```json
 {
@@ -49,35 +49,35 @@ Edit `app/src/main/assets/matrix.json` — one entry per app:
 }
 ```
 
-All fields must be **self-consistent** — US carrier + Chinese locale + Asian timezone will get flagged instantly.
+所有字段必须**自洽** —— 运营商填美国、语言填中文、时区填上海，这种穿帮人设一秒被风控抓。懂的都懂。
 
 <details>
-<summary><b>Common carrier codes</b></summary>
+<summary><b>常用运营商代码</b></summary>
 
-| Country | Carrier | Code |
-|---------|---------|------|
-| US | T-Mobile | `310260` |
-| US | AT&T | `310410` |
-| US | Verizon | `311480` |
-| CN | China Mobile | `46000` |
-| CN | China Unicom | `46001` |
-| CN | China Telecom | `46003` |
-| JP | NTT Docomo | `44010` |
-| UK | EE | `23430` |
+| 国家 | 运营商 | 代码 |
+|------|--------|------|
+| 美国 | T-Mobile | `310260` |
+| 美国 | AT&T | `310410` |
+| 美国 | Verizon | `311480` |
+| 中国 | 中国移动 | `46000` |
+| 中国 | 中国联通 | `46001` |
+| 中国 | 中国电信 | `46003` |
+| 日本 | NTT Docomo | `44010` |
+| 英国 | EE | `23430` |
 
 </details>
 
-## Limitations
+## 已知局限
 
-- Config is baked into the APK — rebuild to change targets
-- Java-level hooks only — NDK `__system_property_get` bypasses this
-- SIM / network / locale / timezone only — no IMEI or device fingerprint
+- 配置写死在 APK 里，换目标得重新编译
+- 只 Hook Java 层，走 NDK `__system_property_get` 的管不到
+- 只管 SIM / 网络 / 语言 / 时区，不碰 IMEI 和设备指纹
 
-## Community
+## 交流群
 
 <a href="https://t.me/AppsMatrixChat"><img src="tg_group_qrcode.png" alt="Telegram Group" width="200"/></a>
 
-[**Join Telegram Group**](https://t.me/AppsMatrixChat) — feedback, discussion, update notifications.
+[**加入 Telegram 群**](https://t.me/AppsMatrixChat) — 反馈、交流、更新通知。
 
 ## License
 
